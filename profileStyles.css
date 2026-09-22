@@ -156,7 +156,7 @@ section {
 /* --- Base Page & Naruto Wallpaper Background --- */
 html {
     /* Sets the Naruto wallpaper to cover the full window and stay fixed during scrolling */
-    background: url('/images/197448c71d34ae71d835321788cb094c.jpg') no-repeat center center fixed; 
+    background: url('/197448c71d34ae71d835321788cb094c.jpg') no-repeat center center fixed; 
     background-size: cover;
     background-color: #000000;
 }
