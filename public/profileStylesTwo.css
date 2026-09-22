@@ -156,7 +156,7 @@ section {
 /* --- Base Page & Naruto Wallpaper Background --- */
 html {
     /* Sets the Naruto wallpaper to cover the full window and stay fixed during scrolling */
-    background: url('/images/103318-1125x2436-iphone-hd-elden-ring-wallpaper.jpg') no-repeat center center fixed; 
+    background: url('./103318-1125x2436-iphone-hd-elden-ring-wallpaper.jpg') no-repeat center center fixed; 
     background-size: cover;
     background-color: #000000;
 }
