@@ -1,0 +1,176 @@
+/* profileStyle.css - 2000s Nerd & Music Lover Theme */
+
+/* --- Base Body & Retro Background --- */
+body {
+    background-color: #000000;
+    background-image: radial-gradient(#333 1px, transparent 1px);
+    background-size: 20px 20px;
+    color: #33ff33;
+    font-family: "Courier New", Courier, monospace;
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 900px;
+    border: 4px inset #555;
+}
+
+/* --- Music Note Header Graphic --- */
+body::before {
+    content: "♫ ♬ ♩ ♪ ılıılıılıılıılıılı ♫ ♬ ♩ ♪";
+    display: block;
+    color: #ff00ff;
+    font-size: 24px;
+    text-align: center;
+    letter-spacing: 5px;
+    margin-bottom: 20px;
+    text-shadow: 0px 0px 5px #ff00ff;
+}
+
+/* --- Typography & Blinking Terminal Cursor --- */
+h1, h2, h4 {
+    color: #00ffff;
+    text-transform: uppercase;
+    text-shadow: 2px 2px #000080;
+    border-bottom: 2px dashed #ff00ff;
+    padding-bottom: 5px;
+}
+
+@keyframes blink {
+    0% { opacity: 1; }
+    50% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+h1::after {
+    content: " _";
+    animation: blink 1s infinite;
+}
+
+p {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+em {
+    color: #ffff00;
+    font-style: italic;
+}
+
+strong {
+    color: #ff00ff;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+/* --- Links --- */
+a {
+    color: #ffff00;
+    text-decoration: none;
+    border-bottom: 1px solid #ffff00;
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+a:visited {
+    color: #ff9900;
+}
+
+a:hover {
+    color: #000000;
+    background-color: #00ffff;
+    border: 1px dotted #000000;
+}
+
+/* --- Navigation Bars --- */
+nav {
+    background-color: #111;
+    border: 2px outset #555;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 0 15px;
+}
+
+/* --- Unordered & Ordered Lists --- */
+ul {
+    list-style-type: square;
+    color: #ff00ff;
+}
+
+ul li, ol li {
+    color: #33ff33;
+    margin-bottom: 5px;
+}
+
+/* --- Data Tables --- */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+    background-color: #000;
+    border: 3px outset #444;
+}
+
+a:active, button:active {
+    /* Pushes the button down slightly when clicked */
+    transform: translateY(3px); 
+    /* Changes color rapidly on click to simulate a flash */
+    background-color: #ff00ff; 
+    color: #ffffff;
+    border: 1px solid #ffffff;
+}
+
+th, td {
+    border: 1px solid #33ff33;
+    padding: 12px;
+    text-align: left;
+}
+
+th {
+    background-color: #008000;
+    color: #ffffff;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+td:hover {
+    background-color: #113311;
+}
+
+/* --- Sections --- */
+section {
+    margin-top: 30px;
+    padding: 15px;
+    background-color: #0a0a0a;
+    border: 1px solid #33ff33;
+}
+/* --- Base Page & Naruto Wallpaper Background --- */
+html {
+    /* Sets the Naruto wallpaper to cover the full window and stay fixed during scrolling */
+    background: url('/images/197448c71d34ae71d835321788cb094c.jpg') no-repeat center center fixed; 
+    background-size: cover;
+    background-color: #000000;
+}
+
+body {
+    /* Translucent dark background so neon green/cyan text remains easy to read */
+    background-color: rgba(0, 0, 0, 0.88); 
+    color: #33ff33;
+    font-family: "Courier New", Courier, monospace;
+    padding: 20px;
+    margin: 30px auto;
+    max-width: 900px;
+    
+    /* Classic 2000s chunky window border and glowing green drop shadow */
+    border: 4px inset #555555;
+    box-shadow: 0px 0px 20px #00ff00, inset 0px 0px 10px #000000;
+}

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My projects</title>
+    <link href="profileStylesTwo.css" rel="stylesheet">
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html">Go to profile</a></li>
+            <li><a href="project.html">Go to projects</a></li>
+           <a href="https://www.linkedin.com/in/rukieya-ainoo/" target="_blank">My LinkedIn</a>
+        </ul>
+    </nav>
+
+    <section>
+        <h1>Projects</h1>
+        <table>
+            <thead>
+                <tr>
+                    <th>Project Name</th>
+                    <th>Description</th>
+                    <th>Year</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Agile Methodology</td>
+                    <td>Did some stuff with user stories</td>
+                    <td>2026</td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>Developed a Progressive Web Application using machine learning to detect, protect and alert cyberbullying on social media platforms</p>
+                    </td>
+                    <td>Demonstrated A working full stack web application built with JavaSctipt, Html, CSS, Nodejs, Websocket, Vuejs and python machine learning libraries</td>
+                    <td>2023</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <section>
+        <h2>Javascript Game</h2>
+        <p>Worked on a Simon Says Game during my time at Ladbrokes</p>
+    </section>
+    <!-- ========================================== -->
+    <!-- 2000s GAMING AUDIO & SCRIPT SYSTEM         -->
+    <!-- ========================================== -->
+
+   
+
+        <script>
+               const sound = new Audio("./images/66. The Final Battle.mp3");
+
+             // Lower the volume to 50%
+        sound.volume = 0.3;
+  sound.loop = true;
+                 sound.play();
+        // Play the sound
+
+        // Create a new audio instance
+        const sound2 = new Audio("./images/wolfy_sanic-jump-15984.mp3");
+
+        // Lower the volume to 50%
+        sound2.volume = 1;
+       
+        // 1. ADD CLICK SOUND TO BUTTONS/LINKS
+              
+        // 2. FORCE BACKGROUND MUSIC TO PLAY
+        // Modern browsers block autoplay. This forces the music to start 
+        // the very first time the user clicks ANYWHERE on the website.
+        document.body.addEventListener('click', () => {
+            
+        
+clickables.forEach(item => {
+            item.addEventListener('click', () => {
+                sound2.autoplay = true;
+                    sound2.play();
+            });
+                });
+            
+        }, { once: true }); // The 'once: true' ensures this only triggers the first time
+    </script>
+</body>
+
+</html>

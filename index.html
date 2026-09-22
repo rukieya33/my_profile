@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Nish Mandal">
+    <meta name="description" content="This is an amazing web page">
+    <title>My Profile</title>
+    <link href="profileStyles.css" rel="stylesheet">
+</head>
+
+<body>
+    <nav>
+        <a href="index.html">Go to profile</a>
+        <a href="project.html">Go to projects</a>
+        <a href="https://www.linkedin.com/in/rukieya-ainoo/" target="_blank">My LinkedIn</a>
+    </nav>
+
+    <h1>Rukieya Ainoo</h1>
+    <p>
+        Hi, i am a full stack software developer with 2 years work experience and about 5 years of coding skills.
+         I am currently working as a Java Consultant at an amazing company called Sparta Global and i am optimistic
+          to becoming an excellent Java Test Automation Engineer with the help of my excellent manager and training coach Nish.
+    </p>
+    <h2>My Profile</h2>
+    
+    <h4>My Skills</h4>
+    <ul>
+        <li>Javascript</li>
+        <li>Ruby & Rails</li>
+        <li>React</li>
+        <li>Nodejs</li>
+        <li>MongoDB</li>
+        <li>SQL</li>
+        <li>Figma</li>
+        <li>Git & Github</li>
+        <li>Java</li>
+        <li>HTML</li>
+        <li>CSS</li>
+    </ul>
+    <p>An <em>awesome</em> and <strong>amazing</strong> website demo</p>
+
+    <h4>My Hobbies</h4>
+    <ul>
+        <li>Programming</li>
+        <li>Dancing</li>
+        <li>Music</li>
+        <li>Video Games</li>
+        <li>Anime</li>
+        <li>Movies</li>
+        <li>Music</li>
+        <li>Parties</li>
+        <li>Concerts</li>
+        <li>Travel</li>
+    </ul>
+
+    <h4>Goals</h4>
+    <ol>
+        <li>Become A Coding Expert</li>
+        <li>Finish this course</li>
+        <li>Be one of the best software engineers in the world</li>
+    </ol>
+    <!-- ========================================== -->
+    <!-- 2000s GAMING AUDIO & SCRIPT SYSTEM         -->
+    <!-- ========================================== -->
+
+     <!-- Button Click Sound Effect -->
+   
+
+    <script>
+        // Grab the audio elements
+        // Create a new audio instance
+   
+
+    // Lower the volume to 50%
+
+    // Play the sound
+
+    // Create a new audio instance
+  
+ const sound = new Audio("./images/naruto_theme_song.mp3");
+//  clickables.forEach(item => {
+//             item.addEventListener('click', () => {
+//                 // Reset the sound to 0 so it can play rapidly on fast clicks
+//                 sound2.currentTime = 0; 
+//                 sound2.play();
+//             });
+//         })
+                 sound.loop = true;
+                     sound.volume = 0.3;
+                     sound.play();
+
+        // 1. ADD CLICK SOUND TO BUTTONS/LINKS
+            
+        // 2. FORCE BACKGROUND MUSIC TO PLAY
+        // Modern browsers block autoplay. This forces the music to start 
+        // the very first time the user clicks ANYWHERE on the website.
+        document.body.addEventListener('click', () => {
+         
+                  const sound2 = new Audio("./images/Mario Jump - QuickSounds.com.mp3");
+
+
+                sound2.autoplay;
+                    sound2.volume = 1;
+                    sound2.play();
+
+            
+        }, { once: true }); // The 'once: true' ensures this only triggers the first time
+    </script>
+</body>
+
+</html>
